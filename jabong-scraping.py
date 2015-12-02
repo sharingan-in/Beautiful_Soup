@@ -1,4 +1,4 @@
-# *** Python script to  scrape any jabong page and displays the top 5 brands with 
+''' *** Python script to  scrape any jabong page and displays the top 5 brands with 
 #their total products and the percentage of the brand products
 #  		Example : 
 #				$ Python3 jabong-scraping..py					
@@ -16,7 +16,7 @@
 #				Fila has total of 111 products on jabong which is about 4.1433% of all products
 #				DC has total of 93 products on jabong which is about 3.4714% of all products
 #				Yepme has total of 93 products on jabong which is about 3.4714% of all products
-
+'''
 from bs4 import BeautifulSoup
 
 import operator
