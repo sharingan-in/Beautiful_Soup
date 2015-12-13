@@ -1,7 +1,7 @@
 ''' *** Python script to  scrape any jabong page and displays the top 5 brands with 
 #their total products and the percentage of the brand products
 #  		Example : 
-#				$ Python3 jabong-scraping..py					
+#				$ Python3 jabong-scraping.py					
 #				Enter the url :  http://www.jabong.com/men/shoes/sneakers/
 #				Currently there are 2679 products for this category
 #				Enter the product name or enter 0 for the list of all brands
@@ -30,7 +30,7 @@ if url[0:4]=="http":
 
 else :
 	req = requests.get("http://" + url)
-fl = open("jabong-brand.txt",'w+') #this file stores the name all brand with thier product count as dictionary 
+fl = open("jabong-brand.txt",'w+') #this file stores the name all brand with their product count as dictionary 
 content = req.text
 code= BeautifulSoup(content)
 store = code.find('div',"all-brand-filters")
