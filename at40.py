@@ -20,7 +20,7 @@ print("\n\n")
 data=str(store.get_text())
 
 data=' '.join(data.split())
-
+print("\n\n")
 print(data)
 
 
