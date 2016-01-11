@@ -12,9 +12,8 @@ mon=month.index(mon)
 req = requests.get("http://www.at40.com/top-40/" + year +'/'+ str(mon))
 content = req.text
 code= BeautifulSoup(content)
-store = code.find_all('td',"chartintlist2")
+store = code.find_all('td',"chartintlist4")
 print("\n\n")
-store=store.find('td',
 store=store.get_text()
 data=str(store)
 
