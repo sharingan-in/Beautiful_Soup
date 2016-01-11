@@ -9,6 +9,8 @@ mon = str(input("enter the month"))
 mon=mon.upper()
 
 mon=month.index(mon)
+if mon==0 :
+  print (" wrong input ")
 req = requests.get("http://www.at40.com/top-40/" + year +'/'+ str(mon))
 content = req.text
 code= BeautifulSoup(content)
@@ -19,7 +21,7 @@ store=store.get_text()
 data=str(store)
 
 data=' '.join(data.split())
-
+print("\n\n")
 print(data)
 
 
